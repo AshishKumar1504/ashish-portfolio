@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+        <section class="my-project">
+                <h1 class="section-title autoDisplay">My Project1 👨‍💻</h1>
+                <div class="project-card">
+                    <div class="project-vidbox autoBlur" >
+                        <video loop id="projectVideo1" src="videos/videofood.mp4"></video>
+                        <div class="hover-sign"></div>
+                    </div>
+                    <div class="project-info fadein-left">
+                        <h1>Food <span class="gradient">Delivery</span> Management</h1>
+                        <p>A Food Delivery Management System is a software application designed to streamline the process of ordering, preparing, and delivering food. It connects customers, restaurants, and delivery staff through a single platform, ensuring that food is delivered quickly, accurately, and efficiently.</p>
+                    <button><i class='bx bx-link-external' ></i> Website</button> 
+                </div>
+                </div>
+                
+            </section>
+            <section class="my-project">
+                <h1 class="section-title autoDisplay">My Project2 👨‍💻</h1>
+                <div class="project-card">
+                    <div class="project-vidbox autoBlur" >
+                        <video loop id="projectVideo1" src="videos/video.mp4"></video>
+                        <div class="hover-sign"></div>
+                    </div>
+                    <div class="project-info fadein-left">
+                        <h1>CSS <span class="gradient">Animations</span></h1>
+                            <p>
+                                A simple web project made using HTML and CSS. It uses different
+                                animations, transitions, and visual effects to make the webpage
+                                more attractive and interactive.
+                            </p>
+                        <button>
+                            <i class='bx bx-link-external'></i>
+                            <a href="http://127.0.0.1:5500/index.html"> Website</a>
+                        </button> 
+                </div>
+                </div>
+                
+            </section>
+    </div>
+    <script>
+    const videos = document.querySelectorAll(".project-vidbox video");
+
+    videos.forEach(video => {
+
+        video.addEventListener("mouseenter", () => {
+            video.play();
+        });
+
+        video.addEventListener("mouseleave", () => {
+            video.pause();
+            video.currentTime = 0;
+        });
+
+    });
+</script>
+</body>
+</html>
